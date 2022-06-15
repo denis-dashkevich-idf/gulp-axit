@@ -1,0 +1,36 @@
+/* default */
+:root {
+  --black: #2d3033;
+  --accent: #f38281;
+  --blue: #95e1d3;
+  --grey: #c6cbcd;
+  --content-width: 1170px;
+  --mobile-padding: 16px;
+  --gutter: 15px;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --gutter: 10px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--black);
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
