@@ -1,13 +1,10 @@
-// // Import jQuery module (npm i jquery)
-// import $ from 'jquery'
-// window.jQuery = $
-// window.$ = $
-import Splide from '@splidejs/splide';
-// // Import vendor jQuery plugin example (not module)
-// require('~/app/libs/mmenu/dist/mmenu.js')
+import Splide from "@splidejs/splide";
 
-document.addEventListener('DOMContentLoaded', () => {
-
-	// Custom JS
-
-})
+document.addEventListener("DOMContentLoaded", () => {
+  new Splide(".review-slider", {
+    classes: {
+      arrow: "splide__arrow review-slider__arrow",
+    },
+    pagination: false,
+  }).mount();
+});

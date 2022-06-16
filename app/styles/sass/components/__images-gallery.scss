@@ -4,20 +4,22 @@
   flex-wrap: wrap;
   column-gap: 2px;
   row-gap: 2px;
-}
-.images-gallery__item {
-  --aspect-ratio: calc(100% / 3 - 2px);
-  position: relative;
-  width: var(--aspect-ratio);
-  padding-bottom: var(--aspect-ratio);
-  overflow: hidden;
-}
-.images-gallery__img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+
+  &__item {
+    --aspect-ratio: calc(100% / 3 - 2px);
+    position: relative;
+    width: var(--aspect-ratio);
+    padding-bottom: var(--aspect-ratio);
+    overflow: hidden;
+  }
+  
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 }

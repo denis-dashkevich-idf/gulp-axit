@@ -5,13 +5,13 @@
 	<img src="https://raw.githubusercontent.com/agragregra/oh5/master/app/images/src/preview.jpg" alt="Start HTML Template">
 </p>
 
-<p><strong>OptimizedHTML 5</strong> - lightweight startup environment with <strong>Gulp 4</strong>, <strong>Preprocessors (Sass, Scss, Less, Stylus)</strong>, <strong>clean-css</strong>, <strong>Browsersync</strong>, <strong>Autoprefixer</strong>, <strong>webpack-stream</strong>, <strong>Babel</strong>, <strong>Rsync</strong>, <strong>CSS Reboot</strong> (Bootstrap reboot), Server-side <strong>HTML imports</strong> (SSI), <strong>build</strong>. It uses best practices for responsive images, JavaScript, CSS optimizing and contains a <strong>.htaccess</strong> code for resources caching (images, fonts, HTML, CSS, JS and other content types).</p>
+<p><strong>OptimizedHTML 5</strong> - lightweight startup environment with <strong>Gulp 4</strong>, <strong>Preprocessors (Sass, Scss, Less, Stylus)</strong>, <strong>cssnano</strong>, <strong>Browsersync</strong>, <strong>PostCSS</strong>, <strong>Autoprefixer</strong>, <strong>webpack-stream</strong>, <strong>Babel</strong>, <strong>Rsync</strong>, <strong>CSS Reboot</strong> (Bootstrap reboot), Server-side <strong>HTML imports</strong> (SSI), <strong>build</strong>, <strong>gulp-imagemin</strong>. It uses best practices of images compression, JavaScript, CSS optimizing and contains a <strong>.htaccess</strong> code for resources caching (images, fonts, HTML, CSS, JS and other content types).</p>
 
 <h2>How to use OptimizedHTML 5</h2>
 
 <p>Clone into the current folder and remove all unnecessary (one command):</p>
 
-<pre>git clone https://github.com/agragregra/oh5 .; rm -rf trunk .gitignore readme.md .git dist</pre>
+<pre>git clone https://github.com/agragregra/oh5 .; rm -rf trunk .gitignore readme.md .git dist .editorconfig</pre>
 
 <ol>
 	<li>Clone or <a href="https://github.com/agragregra/OptimizedHTML-5/archive/master.zip">Download</a> <strong>OptimizedHTML 5</strong> from GitHub</li>
@@ -74,10 +74,10 @@
 <h2>Included features</h2>
 
 <ol>
-	<li><a href="https://getbootstrap.com/docs/4.0/content/reboot/">bootstrap-reboot</a> - Bootstrap Reboot CSS collection</li>
+	<li><a href="https://getbootstrap.com/docs/5.0/content/reboot/">bootstrap-reboot</a> - Bootstrap Reboot CSS collection</li>
 	<li>
-		<a href="https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints">_breakpoints.scss</a> - Bootstrap Breakpoints mixin (available only for sass and scss)</li>
-		<li><a href="https://getbootstrap.com/docs/4.0/layout/grid/">bootstrap-grid</a> (optional) - Bootstrap Grid collection</li>
+		<a href="https://getbootstrap.com/docs/5.0/layout/breakpoints/">_breakpoints.scss</a> - Bootstrap Breakpoints mixin (available only for sass and scss)</li>
+		<li><a href="https://getbootstrap.com/docs/5.0/layout/grid/">bootstrap-grid</a> (optional) - Bootstrap Grid collection</li>
 </ol>
 
 <h2>Helpers</h2>
@@ -92,15 +92,15 @@ Or get from google-webfonts-helper: <a href="https://google-webfonts-helper.hero
 <h3>font-weight helper</h3>
 
 <ul>
-	<li><strong>100</strong> - Extra Light or Ultra Light</li>
-	<li><strong>200</strong> - Light or Thin</li>
-	<li><strong>300</strong> - Book or Demi</li>
-	<li><strong>400</strong> - Regular or Normal</li>
+	<li><strong>100</strong> - Thin (Hairline)</li>
+	<li><strong>200</strong> - Extra Light (Ultra Light)</li>
+	<li><strong>300</strong> - Light</li>
+	<li><strong>400</strong> - Regular (Normal)</li>
 	<li><strong>500</strong> - Medium</li>
-	<li><strong>600</strong> - Semibold or Demibold</li>
+	<li><strong>600</strong> - Semi Bold (Demi Bold)</li>
 	<li><strong>700</strong> - Bold</li>
-	<li><strong>800</strong> - Black or Extra Bold or Heavy</li>
-	<li><strong>900</strong> - Extra Black or Fat or Ultra Blac or Heavy</li>
+	<li><strong>800</strong> - Extra Bold (Ultra Bold)</li>
+	<li><strong>900</strong> - Black (Heavy)</li>
 </ul>
 
 <h2>Caching</h2>
@@ -148,5 +148,5 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml appl
 <h2>Issues</h2>
 
 <ol>
-	<li>Long Preprocessor compile: Disable the "safe write" option in PHPStorm settings.</li>
+	<li>Long Preprocessor compile: Disable the "safe write" option in PHPStorm/WebStorm settings.</li>
 </ol>
