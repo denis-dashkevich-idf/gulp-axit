@@ -8,26 +8,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing</title>
   <!-- styles -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <!-- <link rel="stylesheet" href="./assets/css/style.css?ver=2.0"> -->
-  <link rel="stylesheet" href="./css/main.min.css">
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <link rel="stylesheet" href="./css/app.min.css">
+  <script src="./js/app.min.js" defer></script>
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="./assets/js/script.js" defer></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Raleway:wght@400;700;900&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
-
-  <div class="block">
-    wdsfsdf
-    <div class="block__item">1</div>
-  </div>
   <!-- header -->
   <!-- <header class="header">
     <div class="container">
@@ -59,13 +53,13 @@
 
 <main class="main">
 	<!-- promo -->
-	<!-- <section class="promo">
-	<div class="container">
-		<p class="promo__subtitle" data-aos="fade-down">Creative Template</p>
-		<h1 class="promo__title" data-aos="fade-up">Welcome <br> to MoGo</h1>
-		<a class="promo__link" href="/learn-more/">learn more</a>
-	</div>
-</section> -->
+	<section class="promo">
+		<div class="container">
+			<p class="promo__subtitle" data-aos="fade-down">Creative Template</p>
+			<h1 class="promo__title" data-aos="fade-up">Welcome <br> to MoGo</h1>
+			<a class="promo__link" href="/learn-more/">learn more</a>
+		</div>
+	</section>
 
 	<!-- amazing -->
 	<section class="amazing">
@@ -78,48 +72,81 @@
 
 			<div class="row amazing__row">
 				<div class="amazing__card col-4 col-md-6 col-xs-12">
-					<img class="amazing__card-img" src="/assets/images/about-us/icon1.svg" alt="">
+					<img class="amazing__card-img" src="/images/dist/about-us/icon1.svg" alt="">
 					<div class="amazing__card-info">
 						<p class="amazing__card-name">photography</p>
 						<p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 				</div>
 				<div class="amazing__card col-4 col-md-6 col-xs-12">
-					<img class="amazing__card-img" src="/assets/images/about-us/icon1.svg" alt="">
+					<img class="amazing__card-img" src="/images/dist/about-us/icon1.svg" alt="">
 					<div class="amazing__card-info">
 						<p class="amazing__card-name">photography</p>
 						<p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 				</div>
 				<div class="amazing__card col-4 col-md-6 col-xs-12">
-					<img class="amazing__card-img" src="/assets/images/about-us/icon1.svg" alt="">
+					<img class="amazing__card-img" src="/images/dist/about-us/icon1.svg" alt="">
 					<div class="amazing__card-info">
 						<p class="amazing__card-name">photography</p>
 						<p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 				</div>
 				<div class="amazing__card col-4 col-md-6 col-xs-12">
-					<img class="amazing__card-img" src="/assets/images/about-us/icon1.svg" alt="">
+					<img class="amazing__card-img" src="/images/dist/about-us/icon1.svg" alt="">
 					<div class="amazing__card-info">
 						<p class="amazing__card-name">photography</p>
 						<p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 				</div>
 				<div class="amazing__card col-4 col-md-6 col-xs-12">
-					<img class="amazing__card-img" src="/assets/images/about-us/icon1.svg" alt="">
+					<img class="amazing__card-img" src="/images/dist/about-us/icon1.svg" alt="">
 					<div class="amazing__card-info">
 						<p class="amazing__card-name">photography</p>
 						<p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 				</div>
 				<div class="amazing__card col-4 col-md-6 col-xs-12">
-					<img class="amazing__card-img" src="/assets/images/about-us/icon1.svg" alt="">
+					<img class="amazing__card-img" src="/images/dist/about-us/icon1.svg" alt="">
 					<div class="amazing__card-info">
 						<p class="amazing__card-name">photography</p>
 						<p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 				</div>
 
+			</div>
+		</div>
+	</section>
+
+	<!-- reviews -->
+	<section class="reviews">
+		<div class="container">
+			<div class="splide review-slider" aria-labelledby="carousel-heading">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide review-slide">
+								<img class="review-slide__icon" src="./images/dist/reviews/icon.svg" alt="">
+								<div class="review-slide__content">
+									<p class="review-slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+									<p class="review-slide__author">Jon Doe</p>
+								</div>
+						</li>
+						<li class="splide__slide review-slide">
+								<img class="review-slide__icon" src="./images/dist/reviews/icon.svg" alt="">
+								<div class="review-slide__content">
+									<p class="review-slide__text">Lorem  sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+									<p class="review-slide__author">Deniz </p>
+								</div>
+						</li>
+						<li class="splide__slide review-slide">
+								<img class="review-slide__icon" src="./images/dist/reviews/icon.svg" alt="">
+								<div class="review-slide__content">
+									<p class="review-slide__text">Lorem ipsum elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+									<p class="review-slide__author">Nen bulk</p>
+								</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -136,7 +163,7 @@
 				<div class="blog__card col-4 col-md-6 col-xs-12">
 					<div class="blog__card-head">
 						<div class="blog__img-wrap">
-							<img class="blog__img" src="./assets/images/blog/news.jpg" alt="">
+							<img class="blog__img" src="./images/dist/blog/news.jpg" alt="">
 						</div>
 						<div class="blog__news-date"><span>15</span> jan</div>
 					</div>
@@ -145,11 +172,11 @@
 						varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
 					<div class="blog__info-panel">
 						<div class="blog__info-block">
-							<img class="blog__info-icon" src="./assets/images/svg-icons/views.svg" alt="">
+							<img class="blog__info-icon" src="./images/dist/svg-icons/views.svg" alt="">
 							542
 						</div>
 						<div class="blog__info-block">
-							<img class="blog__info-icon" src="./assets/images/svg-icons/comments.svg" alt="">
+							<img class="blog__info-icon" src="./images/dist/svg-icons/comments.svg" alt="">
 							542
 						</div>
 					</div>
@@ -158,7 +185,7 @@
 				<div class="blog__card col-4 col-md-6 col-xs-12">
 					<div class="blog__card-head">
 						<div class="blog__img-wrap">
-							<img class="blog__img" src="./assets/images/blog/girl.jpg" alt="">
+							<img class="blog__img" src="./images/dist/blog/girl.jpg" alt="">
 						</div>
 						<div class="blog__news-date"><span>15</span> jan</div>
 					</div>
@@ -167,11 +194,11 @@
 						varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
 					<div class="blog__info-panel">
 						<div class="blog__info-block">
-							<img class="blog__info-icon" src="./assets/images/svg-icons/views.svg" alt="">
+							<img class="blog__info-icon" src="./images/dist/svg-icons/views.svg" alt="">
 							542
 						</div>
 						<div class="blog__info-block">
-							<img class="blog__info-icon" src="./assets/images/svg-icons/comments.svg" alt="">
+							<img class="blog__info-icon" src="./images/dist/svg-icons/comments.svg" alt="">
 							542
 						</div>
 					</div>
@@ -180,7 +207,7 @@
 				<div class="blog__card col-4 col-md-6 col-xs-12">
 					<div class="blog__card-head">
 						<div class="blog__img-wrap">
-							<img class="blog__img" src="./assets/images/blog/men.jpg" alt="">
+							<img class="blog__img" src="./images/dist/blog/men.jpg" alt="">
 						</div>
 						<div class="blog__news-date"><span>15</span> jan</div>
 					</div>
@@ -189,11 +216,11 @@
 						varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
 					<div class="blog__info-panel">
 						<div class="blog__info-block">
-							<img class="blog__info-icon" src="./assets/images/svg-icons/views.svg" alt="">
+							<img class="blog__info-icon" src="./images/dist/svg-icons/views.svg" alt="">
 							542
 						</div>
 						<div class="blog__info-block">
-							<img class="blog__info-icon" src="./assets/images/svg-icons/comments.svg" alt="">
+							<img class="blog__info-icon" src="./images/dist/svg-icons/comments.svg" alt="">
 							542
 						</div>
 					</div>
@@ -209,7 +236,7 @@
 		<div class="footer__row row">
 			<div class="footer__col footer__media-col col-4 col-md-6 col-xs-12">
 				<a href="/" class="footer__logo-link">
-					<img src="./assets/images/footer/logo.svg" alt="logo" class="footer__logo">
+					<img src="./images/dist/footer/logo.svg" alt="logo" class="footer__logo">
 				</a>
 				<p class="footer__descr">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget
@@ -224,27 +251,27 @@
 						<ul class="footer__social-list">
 							<li class="footer__social-item">
 								<a href="" class="footer__social-link">
-									<img class="footer__social-icon" src="./assets/images/social-svg/facebook.svg" alt="facebook">
+									<img class="footer__social-icon" src="./images/dist/social-svg/facebook.svg" alt="facebook">
 								</a>
 							</li>
 							<li class="footer__social-item">
 								<a href="" class="footer__social-link">
-									<img class="footer__social-icon" src="./assets/images/social-svg/instagram.svg" alt="">
+									<img class="footer__social-icon" src="./images/dist/social-svg/instagram.svg" alt="">
 								</a>
 							</li>
 							<li class="footer__social-item">
 								<a href="" class="footer__social-link">
-									<img class="footer__social-icon" src="./assets/images/social-svg/pinterest.svg" alt="">
+									<img class="footer__social-icon" src="./images/dist/social-svg/pinterest.svg" alt="">
 								</a>
 							</li>
 							<li class="footer__social-item">
 								<a href="" class="footer__social-link">
-									<img class="footer__social-icon" src="./assets/images/social-svg/witter.svg" alt="">
+									<img class="footer__social-icon" src="./images/dist/social-svg/witter.svg" alt="">
 								</a>
 							</li>
 							<li class="footer__social-item">
 								<a href="" class="footer__social-link">
-									<img class="footer__social-icon" src="./assets/images/social-svg/youtube.svg" alt="">
+									<img class="footer__social-icon" src="./images/dist/social-svg/youtube.svg" alt="">
 								</a>
 							</li>
 						</ul>
@@ -259,14 +286,14 @@
 				<p class="footer__col-title">blogs</p>
 				<div class="footer__news">
 					<div class="news-card footer__news-card">
-						<a class="news-card__img-link" href="/"><img class="news-card__img" src="./assets/images/footer/news-img.jpg" alt=""></a>
+						<a class="news-card__img-link" href="/"><img class="news-card__img" src="./images/dist/footer/news-img.jpg" alt=""></a>
 						<div class="news-card__content">
 							<p class="news-card__title"><a href="/">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
 							<span class="news-card__date">jan.9.22.15</span>
 						</div>
 					</div>
 					<div class="news-card footer__news-card">
-						<a class="news-card__img-link" href="/"><img class="news-card__img" src="./assets/images/footer/news-img.jpg" alt=""></a>
+						<a class="news-card__img-link" href="/"><img class="news-card__img" src="./images/dist/footer/news-img.jpg" alt=""></a>
 						<div class="news-card__content">
 							<p class="news-card__title"> <a href="/">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
 							</p>
@@ -274,7 +301,7 @@
 						</div>
 					</div>
 					<div class="news-card footer__news-card">
-						<a class="news-card__img-link" href="/"><img class="news-card__img" src="./assets/images/footer/news-img.jpg" alt=""></a>
+						<a class="news-card__img-link" href="/"><img class="news-card__img" src="./images/dist/footer/news-img.jpg" alt=""></a>
 						<div class="news-card__content">
 							<p class="news-card__title"><a href="/">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
 							<span class="news-card__date">jan.9.22.15</span>
@@ -286,31 +313,31 @@
 				<p class="footer__col-title">instagram</p>
 				<div class="images-gallery">
 					<div class="images-gallery__item">
-						<img src="./assets/images/blog/girl.jpg" alt="" class="images-gallery__img">
+						<img src="./images/dist/blog/girl.jpg" alt="" class="images-gallery__img">
 					</div>
 					<div class="images-gallery__item">
-						<img src="./assets/images/footer/inst-img.jpg" alt="" class="images-gallery__img">
+						<img src="./images/dist/footer/inst-img.jpg" alt="" class="images-gallery__img">
 					</div>
 					<div class="images-gallery__item">
-						<img src="./assets/images/footer/inst-img.jpg" alt="" class="images-gallery__img">
+						<img src="./images/dist/footer/inst-img.jpg" alt="" class="images-gallery__img">
 					</div>
 					<div class="images-gallery__item">
-						<img src="./assets/images/footer/inst-img.jpg" alt="" class="images-gallery__img">
+						<img src="./images/dist/footer/inst-img.jpg" alt="" class="images-gallery__img">
 					</div>
 					<div class="images-gallery__item">
-						<img src="./assets/images/footer/inst-img.jpg" alt="" class="images-gallery__img">
+						<img src="./images/dist/footer/inst-img.jpg" alt="" class="images-gallery__img">
 					</div>
 					<div class="images-gallery__item">
-						<img src="./assets/images/footer/inst-img.jpg" alt="" class="images-gallery__img">
+						<img src="./images/dist/footer/inst-img.jpg" alt="" class="images-gallery__img">
 					</div>
 					<div class="images-gallery__item">
-						<img src="./assets/images/footer/inst-img.jpg" alt="" class="images-gallery__img">
+						<img src="./images/dist/footer/inst-img.jpg" alt="" class="images-gallery__img">
 					</div>
 					<div class="images-gallery__item">
-						<img src="./assets/images/footer/inst-img.jpg" alt="" class="images-gallery__img">
+						<img src="./images/dist/footer/inst-img.jpg" alt="" class="images-gallery__img">
 					</div>
 					<div class="images-gallery__item">
-						<img src="./assets/images/footer/inst-img.jpg" alt="" class="images-gallery__img">
+						<img src="./images/dist/footer/inst-img.jpg" alt="" class="images-gallery__img">
 					</div>
 				</div>
 				<a href="/" class="footer__see-more">see all photos</a>
