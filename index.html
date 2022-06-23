@@ -23,11 +23,11 @@
 
 <body>
   <!-- header -->
-  <!-- <header class="header">
+  <header class="header">
     <div class="container">
       <div class="header__inner">
         <a href="/" class="header__logo-link">
-          <img class="header__logo-img" src="./assets/images/header/logo.svg" alt="logo">
+          <img class="header__logo-img" src="./images/dist/header/logo.svg" alt="logo">
         </a>
         <nav class="header__nav">
           <ul class="header__menu">
@@ -46,18 +46,45 @@
             <li class="header__menu-item"><a href="/" class="header__menu-link">Contact</a></li>
           </ul>
         </nav>
+        <button class="burger header__burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
       </div>
     </div>
-  </header> -->
-
+  </header>
 
 <main class="main">
 	<!-- promo -->
 	<section class="promo">
 		<div class="container">
-			<p class="promo__subtitle" data-aos="fade-down">Creative Template</p>
-			<h1 class="promo__title" data-aos="fade-up">Welcome <br> to MoGo</h1>
-			<a class="promo__link" href="/learn-more/">learn more</a>
+			<div class="splide promo__slider" aria-label="Splide Basic HTML Example">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide promo__slide" data-slide-title="01 intro">
+							<p class="promo__subtitle" data-aos="fade-down">Creative Template</p>
+							<h1 class="promo__title" data-aos="fade-up">Welcome <br> to MoGo</h1>
+							<a class="promo__link" href="/learn-more/">learn more</a>
+						</li>
+						<li class="splide__slide promo__slide" data-slide-title="02 worck">
+							<p class="promo__subtitle" data-aos="fade-down">Creative</p>
+							<h1 class="promo__title" data-aos="fade-up">Welcome <br> Alex</h1>
+							<a class="promo__link" href="/learn-more/">learn more</a>
+						</li>
+						<li class="splide__slide promo__slide" data-slide-title="03 about">
+							<p class="promo__subtitle" data-aos="fade-down">Creative Template</p>
+							<h1 class="promo__title" data-aos="fade-up">Welcome <br>Denis</h1>
+							<a class="promo__link" href="/learn-more/">learn more</a>
+						</li>
+						<li class="splide__slide promo__slide" data-slide-title="04 contacts">
+							<p class="promo__subtitle" data-aos="fade-down">Creative Template</p>
+							<h1 class="promo__title" data-aos="fade-up">Welcome <br> Mary</h1>
+							<a class="promo__link" href="/learn-more/">learn more</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -118,32 +145,50 @@
 		</div>
 	</section>
 
+	<section class="design">
+		<div class="container">
+			<div class="section-head design__head">
+				<p class="section-head__subtitle">For all  devices</p>
+				<h2 class="section-head__title">unique design</h2>
+			</div>
+			<div class="design__imgs-wrap">
+				<img class="design__pc-img" src="./images/dist/design/mac.png" alt="mac">
+				<img class="design__phone-img"  src="./images/dist/design/iphone.png" alt="phone">
+			</div>
+		</div>
+	</section>
+
 	<!-- reviews -->
 	<section class="reviews">
 		<div class="container">
-			<div class="splide review-slider" aria-labelledby="carousel-heading">
+			<div class="splide review-slider" id="review-slider" aria-labelledby="carousel-heading">
 				<div class="splide__track">
 					<ul class="splide__list">
 						<li class="splide__slide review-slide">
-								<img class="review-slide__icon" src="./images/dist/reviews/icon.svg" alt="">
-								<div class="review-slide__content">
-									<p class="review-slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
-									<p class="review-slide__author">Jon Doe</p>
-								</div>
+							<img class="review-slide__icon" src="./images/dist/reviews/icon.svg" alt="">
+							<div class="review-slide__content">
+								<p class="review-slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam
+									platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet
+									venenatis, massa sit.</p>
+								<p class="review-slide__author">Jon Doe</p>
+							</div>
 						</li>
 						<li class="splide__slide review-slide">
-								<img class="review-slide__icon" src="./images/dist/reviews/icon.svg" alt="">
-								<div class="review-slide__content">
-									<p class="review-slide__text">Lorem  sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
-									<p class="review-slide__author">Deniz </p>
-								</div>
+							<img class="review-slide__icon" src="./images/dist/reviews/icon.svg" alt="">
+							<div class="review-slide__content">
+								<p class="review-slide__text">Lorem sit amet, consectetur adipiscing elit. Neque nec diam platea
+									ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis,
+									massa sit.</p>
+								<p class="review-slide__author">Deniz </p>
+							</div>
 						</li>
 						<li class="splide__slide review-slide">
-								<img class="review-slide__icon" src="./images/dist/reviews/icon.svg" alt="">
-								<div class="review-slide__content">
-									<p class="review-slide__text">Lorem ipsum elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
-									<p class="review-slide__author">Nen bulk</p>
-								</div>
+							<img class="review-slide__icon" src="./images/dist/reviews/icon.svg" alt="">
+							<div class="review-slide__content">
+								<p class="review-slide__text">Lorem ipsum elit. Neque nec diam platea ullamcorper feugiat amet. Id
+									aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+								<p class="review-slide__author">Nen bulk</p>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -229,6 +274,46 @@
 			</div>
 		</div>
 	</section>
+
+
+	<!-- reviews -->
+	<section class="author-reviews">
+		<div class="container">
+			<div class="splide review-slider" id="author-review" aria-labelledby="carousel-heading">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide review-slide">
+							<img class="review-slide__icon" src="./images/dist/reviews/men.jpg" alt="">
+							<div class="review-slide__content">
+								<p class="review-slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam
+									platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet
+									venenatis, massa sit.</p>
+								<p class="review-slide__author">Jon Doe</p>
+							</div>
+						</li>
+						<li class="splide__slide review-slide">
+							<img class="review-slide__icon" src="./images/dist/reviews/men.jpg" alt="">
+							<div class="review-slide__content">
+								<p class="review-slide__text">Lorem sit amet, consectetur adipiscing elit. Neque nec diam platea
+									ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis,
+									massa sit.</p>
+								<p class="review-slide__author">Deniz </p>
+							</div>
+						</li>
+						<li class="splide__slide review-slide">
+							<img class="review-slide__icon" src="./images/dist/reviews/men.jpg" alt="">
+							<div class="review-slide__content">
+								<p class="review-slide__text">Lorem ipsum elit. Neque nec diam platea ullamcorper feugiat amet. Id
+									aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+								<p class="review-slide__author">Nen bulk</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
 </main>
 
 <footer class="footer">
