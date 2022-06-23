@@ -1,13 +1,19 @@
 .review-slide {
   display: flex;
+  align-items: flex-start;
 
   &__icon {
     width: 170px;
     flex-shrink: 0;
-  }
+    margin-right: 30px;
 
-  &__content {
-    padding-left: 30px;
+    @include breakpoint(md) {
+      width: 100px;
+    }
+
+    @include breakpoint(sm) {
+      display: none;
+    }
   }
 
   &__text {
@@ -17,11 +23,19 @@
     font-style: italic;
     margin-bottom: 26px;
     line-height: 1.5;
+
+    @include breakpoint(xl) {
+      font-size: 18px;
+    }
   }
 
   &__author {
     font-family: "Kaushan Script";
     font-size: 30px;
+
+    @include breakpoint(xl) {
+      font-size: 24px;
+    }
   }
 
   &__author::before {
@@ -32,5 +46,10 @@
     height: 4px;
     background: var(--accent);
     vertical-align: middle;
+
+    @include breakpoint(xl) {
+      width: 47px;
+      margin-right: 37px;
+    }
   }
 }

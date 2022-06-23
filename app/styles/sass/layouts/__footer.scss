@@ -1,6 +1,6 @@
 /* footer */
 .footer {
-  padding-top: 80px;
+  padding-top: 62px;
 
   &__col {
     padding-bottom: 42px;
@@ -13,8 +13,9 @@
 
   &__descr {
     font-size: 18px;
+    line-height: 1.2;
     margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: var(--grey);
   }
 
@@ -90,12 +91,12 @@
   &__col-title {
     font-weight: 700;
     font-size: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     text-transform: uppercase;
   }
 
   &__news-card {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
   &__news-card:last-child {
@@ -112,7 +113,8 @@
   }
 
   &__copyright {
-    padding: 15px 0;
+    padding: 18px 0;
+    text-transform: uppercase;
     text-align: center;
     font-weight: 700;
     font-size: 13px;

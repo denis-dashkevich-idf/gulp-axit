@@ -14,8 +14,9 @@ import gulpSass      from 'gulp-sass'
 import dartSass      from 'sass'
 import sassglob      from 'gulp-sass-glob'
 const  sass          = gulpSass(dartSass)
+import gcmq 				 from 'gulp-group-css-media-queries'
+import csso 				 from 'gulp-csso'
 import postCss       from 'gulp-postcss'
-import cssnano       from 'cssnano'
 import autoprefixer  from 'autoprefixer'
 import imagemin      from 'gulp-imagemin'
 import changed       from 'gulp-changed'
@@ -32,7 +33,7 @@ function browsersync() {
 		ghostMode: { clicks: false },
 		notify: false,
 		online: true,
-		// tunnel: 'yousutename', // Attempt to use the URL https://yousutename.loca.lt
+		// tunnel: 'axit-site', // Attempt to use the URL https://yousutename.loca.lt
 	})
 }
 
@@ -82,8 +83,9 @@ function styles() {
 		.pipe(eval(preprocessor)({ 'include css': true }))
 		.pipe(postCss([
 			autoprefixer({ grid: 'autoplace' }),
-			cssnano({ preset: ['default', { discardComments: { removeAll: true } }] })
 		]))
+		.pipe(gcmq())
+		.pipe(csso())
 		.pipe(concat('app.min.css'))
 		.pipe(dest('app/css'))
 		.pipe(browserSync.stream())

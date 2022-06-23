@@ -14,24 +14,66 @@
 
   &__inner {
     display: flex;
+    align-items: center;
     /* justify-content: space-between; */
   }
 
   &__logo-link {
+    z-index: 1;
   }
 
   &__logo-img {
   }
 
+  &__burger {
+    display: none;
+
+    @include breakpoint(md) {
+      display: flex;
+      margin-left: auto;
+    }
+  }
+
   &__nav {
     margin-left: auto;
+
+    @include breakpoint(md) {
+      display: none;
+    }
+
+    &_opened {
+      @include breakpoint(md) {
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-image: linear-gradient(
+            360deg,
+            rgba(237, 215, 137, 0.9) 0%,
+            rgba(233, 130, 131, 0.9) 100%
+          ),
+          url("../../images/dist/promo-bg.jpg");
+        background-size: cover, cover;
+        background-repeat: no-repeat, no-repeat;
+        background-position: center, center;
+
+        .header__menu {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+        }
+      }
+    }
   }
 
   &__menu {
     display: flex;
     list-style: none;
   }
-  
+
   &__menu-item {
     position: relative;
     padding: 20px 0;

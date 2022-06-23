@@ -1,0 +1,46 @@
+.design {
+  background: url("../images/dist/design/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 43px;
+  padding-bottom: 25px;
+
+  @media (min-width: 992px) {
+    padding-top: 28px;
+    padding-bottom: 38px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 42px;
+    padding-bottom: 57px;
+  }
+
+  &__head {
+    margin-bottom: 36px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__imgs-wrap {
+    position: relative;
+    max-width: 445px;
+    margin: 0 auto;
+
+    @media (min-width: 1200px) {
+      max-width: 570px;
+    }
+  }
+
+  &__pc-img {
+  }
+
+  &__phone-img {
+    position: absolute;
+    width: 25%;
+    bottom: -54px;
+    right: 30px;
+  }
+}
